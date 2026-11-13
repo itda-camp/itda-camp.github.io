@@ -1,26 +1,30 @@
+import GlobalNav from './components/GlobalNav'
 import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Games from './components/Games'
 import Contact from './components/Contact'
-import { profile } from './profile'
+import Footer from './components/Footer'
+import Frap from './components/Frap'
 
-const year = new Date().getFullYear()
-
+// 스타벅스 홈의 색 띠 흐름:
+// 크림 히어로 → 흰 본문 → 크림 → 흰 본문 → 진초록 띠 → 크림 → 진초록 푸터
 function App() {
   return (
-    <div className="page">
-      <Hero />
+    <>
+      <GlobalNav />
       <main>
+        <Hero />
         <About />
         <Skills />
         <Projects />
         <Games />
         <Contact />
       </main>
-      <footer className="footer">© {year} {profile.name}</footer>
-    </div>
+      <Footer />
+      <Frap />
+    </>
   )
 }
 

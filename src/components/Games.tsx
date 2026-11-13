@@ -3,7 +3,7 @@ import Section from './Section'
 
 export default function Games() {
   return (
-    <Section id="games" title="즐기는 게임">
+    <Section id="games" title="즐기는 게임" tone="dark">
       <ul className="games">
         {profile.games.map((game) => (
           <li key={game.storeUrl} className="game-card">
